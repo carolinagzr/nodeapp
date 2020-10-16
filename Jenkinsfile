@@ -30,5 +30,6 @@ node {
             app.push("latest")
             } 
                 echo "Trying to Push Docker Build to DockerHub"
+	    sh """"docker run -p 8000:80 carolinagr123/quintaprueba:latest """
     }
 }
