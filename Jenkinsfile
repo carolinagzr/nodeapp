@@ -5,6 +5,7 @@ node {
         /* Cloning the Repository to our Workspace */
 
         checkout scm
+	    sh 'npm install'
     }
 
     stage('Build image') {
